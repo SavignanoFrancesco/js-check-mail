@@ -23,6 +23,7 @@ for (i = 0; i < email_list.length; i++){
 //Richiesta all'utente della propria email
 var email = prompt("Inserisci la tua mail: ");
 console.log("email inserita: ", email);
+document.getElementById("email").innerHTML = "Email inserita: " + email;
 
 //Controllo validita
 for (i = 0; i < email_list.length; i++){
@@ -38,6 +39,8 @@ for (i = 0; i < email_list.length; i++){
 //stampa risultato
 if(valida == true){
     console.log("EMAIL VALIDA!");
+    document.getElementById("validita").innerHTML = "EMAIL VALIDA!";
 }else{
+    document.getElementById("validita").innerHTML = "EMAIL NON VALIDA!";
     console.log("EMAIL NON VALIDA!");
 }
